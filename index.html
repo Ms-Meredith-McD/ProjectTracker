@@ -19,73 +19,81 @@
         </p>
         <p class="question">
     </header>
-    <div class="container mt-5 col-4">
-        <div class="row">
-        <div class="card">
-            <div class="card-header">
-                Instructions
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Click the button below to open a form and provide information for the following:
-                </h5>
-                <p class="card-text">Project Name</p>
-                <p class="card-text">Project Type</p>
-                <p class="card-text">Due Date</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">
-                    Add Project
-                </button>
-            </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal" id="projectModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">New Project</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="projectForm">
-                                <div class="form-group">
-                                    <label for="projectName">Project Name:</label>
-                                    <input type="text" class="form-control" id="projectName" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="projectType">Project Type:</label>
-                                    <select class="form-control" id="projectType">
-                                        <option>Web Development</option>
-                                        <option>Mobile App</option>
-                                        <option>Data Analysis</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="dueDate">Due Date:</label>
-                                    <input type="date" class="form-control" id="dueDate" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
+    <div class="container main">
+        <div class="mt-5 row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Instructions
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Click the button below to open a form and provide information for the
+                            following:
+                        </h5>
+                        <p class="card-text">Project Name</p>
+                        <p class="card-text">Project Type</p>
+                        <p class="card-text">Due Date</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#projectModal">
+                            Add Project
+                        </button>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal" id="projectModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">New Project</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="projectForm">
+                                    <div class="form-group">
+                                        <label for="projectName">Project Name:</label>
+                                        <input type="text" class="form-control" id="projectName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projectType">Project Type:</label>
+                                        <select class="form-control" id="projectType">
+                                            <option>Web Development</option>
+                                            <option>Mobile App</option>
+                                            <option>Data Analysis</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dueDate">Due Date:</label>
+                                        <input type="date" class="form-control" id="dueDate" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container col-8">
-                <div class="container projectName col-4"></div>
-                <header class ="row projectHeader">Name</header>
-                <div class ="addRow"></div>
-                <div class="container projectType col-4"></div>
-                <header class ="row projectHeader">Type</header>
-                <div class ="addRow"></div>
-                <div class="container projectDue col-3"></div>
-                <header class ="row projectHeader">Due</header>
-                <div class ="addRow"></div>
-                <div class="container projectRemove col-1"></div>
-                <header class ="row projectHeader">Remove</header>
-                <div class ="addRow"></div>
+            <div class=" container col-8">
+                <div class="row">
+                    <div class="projectName col-4">
+                        <header class="row projectHeader">Name</header>
+                    </div>
+                    <div class="projectType col-4">
+                        <header class="row projectHeader">Type</header>
+                    </div>
+                    <div class="projectDue col-3">
+
+                        <header class="row projectHeader">Due</header>
+                    </div>
+                    <div class="projectRemove col-1">
+                        <header class="row projectHeader">Remove</header>
+                    </div>
+                    <div class="addRow"></div>
+                </div>
             </div>
         </div>
     </div>
-
+    </div>
 
 
 
