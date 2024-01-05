@@ -1,8 +1,10 @@
 var today = dayjs();
+var reformatDate = today.format('dddd, MMMM D YYYY, h:mm:ss a');
+    $('#3a').text(reformatDate);
 
 function updateTime() {
     today = dayjs();
-    var reformatDate = today.format('dddd, MMMM D YYYY, h:mm:ss a');
+    reformatDate = today.format('dddd, MMMM D YYYY, h:mm:ss a');
     $('#3a').text(reformatDate);
 }
 interval = setInterval(() => {
